@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+
+  .left {
+    flex-basis: 50%;
+    height: 100vh;
+    background-image: url("https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png");
+    svg {
+      fill: #fff;
+      width: 300px;
+      height: 300px;
+      position: relative;
+      left: 25%;
+      top: 25%;
+    }
+  }
+  .right {
+    flex-basis: 50%;
+    height: 100vh;
+    padding: 48px 0 0 42px;
+    svg {
+      fill: #1c9bef;
+      width: 50px;
+      height: 50px;
+    }
+    h1 {
+      margin-top: 0;
+      padding-top: 90px;
+      font-size: 70px;
+      font-weight: 900;
+    }
+    .btn1 {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+footer {
+  p {
+    text-align: center;
+    color: #526371;
+  }
+  text-align: center;
+  color: #526371;
+}

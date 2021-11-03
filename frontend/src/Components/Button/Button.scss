@@ -1,0 +1,35 @@
+.button {
+  padding: 14px 36px;
+  height: 60px;
+  color: #ffffff;
+  background-color: #1c9bef;
+  border-radius: 45px;
+  border: 0;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  &:hover {
+    background-color: #188cd8;
+    transition: 0.3s;
+  }
+
+  &--outlined {
+    color: #0f141a;
+    background-color: #fff;
+    border: 1px solid #cfd9dd;
+    &:hover {
+      background-color: #e6e6e6;
+      transition: 0.3s;
+    }
+  }
+
+  &--closeIcon {
+    padding: 0 18px;
+    background-color: #fff;
+
+    &:hover {
+      background-color: #e6e6e6;
+      transition: 0.7s;
+    }
+  }
+}

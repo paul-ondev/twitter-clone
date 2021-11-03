@@ -44,3 +44,16 @@ footer {
   text-align: center;
   color: #526371;
 }
+
+.modalWindow {
+  position: absolute;
+  left: 27vw;
+  top: 8vh;
+  height: 570px;
+  width: 600px;
+  background-color: #fff;
+  z-index: 10;
+  border-radius: 30px;
+  &__top {
+  }
+}

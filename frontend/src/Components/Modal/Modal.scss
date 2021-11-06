@@ -1,0 +1,30 @@
+.modalWindowBackdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(134, 131, 131, 0.329);
+  z-index: 100;
+}
+
+.modalWindow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 570px;
+  width: 600px;
+  padding: 10px;
+  background-color: #fff;
+  z-index: 101;
+  border-radius: 30px;
+  &__closeIcon {
+    position: relative;
+    left: -5px;
+    top: -1px;
+    margin: 5px;
+  }
+}

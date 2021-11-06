@@ -6,11 +6,15 @@ import "./Button.scss";
 
 interface IconButtonProps {
   children: React.SVGProps<SVGSVGElement>;
+  onClick: () => void;
 }
 
-function IconButton({ children }: IconButtonProps) {
+function IconButton({ children, onClick }: IconButtonProps) {
   return (
-    <button className={classnames("button", "button--closeIcon")}>
+    <button
+      onClick={onClick}
+      className={classnames("button", "button--closeIcon")}
+    >
       {children}
     </button>
   );

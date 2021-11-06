@@ -7,11 +7,15 @@ import "./Button.scss";
 interface ButtonProps {
   children: string;
   outlined?: boolean;
+  onClick?: () => void;
 }
 
-function Button({ children, outlined }: ButtonProps) {
+function Button({ children, outlined, onClick }: ButtonProps) {
   return (
-    <button className={classnames("button", { "button--outlined": outlined })}>
+    <button
+      onClick={onClick}
+      className={classnames("button", { "button--outlined": outlined })}
+    >
       {children}
     </button>
   );

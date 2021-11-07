@@ -4,6 +4,7 @@ import "./../SignIn/SignIn.scss";
 
 import Button from "../../Components/Button";
 import Modal from "../../Components/Modal";
+import TextInput from "../../Components/TextInput";
 
 function SignIn() {
   const [open, setOpen] = useState(false);
@@ -65,7 +66,16 @@ function SignIn() {
           </svg>
         }
       >
-        <div>hfkhksd</div>
+        <form action="">
+          <h2 className="signUp__title">Create your account</h2>
+          <TextInput id="sign-up-name" name="Name" />
+          <TextInput id="sign-up-email" name="Email" type="email" />
+          <h4 className="signUp__birthDate">Date of birth</h4>
+          <p className="signUp__birthDateDescription">
+            This will not be shown publicly. Confirm your own age, even if this
+            account is for a business, a pet, or something else.
+          </p>
+        </form>
       </Modal>
 
       <footer>

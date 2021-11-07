@@ -27,4 +27,21 @@
     top: -1px;
     margin: 5px;
   }
+
+  &__main {
+    overflow: scroll;
+    max-height: 70%;
+    padding: 0 30px;
+  }
+  &__bottom {
+    min-height: 20%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .modalWindow {
+    border-radius: 0;
+    width: 100vw;
+    height: 100vh;
+  }
 }

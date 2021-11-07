@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 
 import "../Modal/Modal.scss";
 import IconButton from "../Button/IconButton";
+import classNames from "classnames";
 
 interface ModalProps {
   open: boolean;
@@ -10,6 +11,7 @@ interface ModalProps {
   children: React.ReactNode;
   topChildren?: React.ReactNode;
   bottomChildren?: React.ReactNode;
+  className?: string;
 }
 
 const Modal = ({
@@ -19,6 +21,7 @@ const Modal = ({
   children,
   topChildren,
   bottomChildren,
+  className,
 }: ModalProps) => {
   useEffect(() => {
     if (open) {
@@ -45,7 +48,11 @@ const Modal = ({
             onClick={HandleBackdropClick(outsideClose)}
             className="modalWindowBackdrop"
           ></div>
-          <div className="modalWindow">
+          <div
+            className={classNames("modalWindow", {
+              [`${className}`]: className || false,
+            })}
+          >
             <div className="modalWindow__top">
               <span className="modalWindow__closeIcon">
                 <IconButton onClick={closeModal}>

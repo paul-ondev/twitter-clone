@@ -1,0 +1,36 @@
+.textInput {
+  &__input {
+    height: 3rem;
+    border: 1px solid #878a8ca6;
+    border-radius: 0.2rem;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    width: 100%;
+    padding: 0.9rem 0.5rem 0;
+
+    background-color: inherit;
+    &:focus {
+      border: 2px solid #1c9bef;
+    }
+  }
+  &__label {
+    position: relative;
+    left: 14px;
+    top: -42px;
+    color: #526371;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  }
+}
+
+.textInput__input:focus ~ .textInput__label,
+.textInput__input:not(:placeholder-shown).textInput__input:not(:focus)
+  ~ .textInput__label {
+  font-size: 0.9rem;
+  top: -55px;
+  left: 11px;
+}
+.textInput__input:focus ~ .textInput__label {
+  color: #1c9bef;
+}

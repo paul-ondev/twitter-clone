@@ -41,12 +41,10 @@ function SignIn() {
           </svg>
           <h1>Happening now</h1>
           <div className="btn1">
-            <Button onClick={openModal} outlined>
-              Sign in to Twitter
-            </Button>
+            <Button outlined>Sign in to Twitter</Button>
           </div>
           <div className="btn2">
-            <Button>Sign up to Twitter</Button>
+            <Button onClick={openModal}>Sign up to Twitter</Button>
           </div>
         </div>
       </main>

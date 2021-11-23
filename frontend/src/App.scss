@@ -1,2 +1,5 @@
-.App {
+@import "/src/scss/variables";
+a {
+  color: $mainBlue;
+  text-decoration: none;
 }

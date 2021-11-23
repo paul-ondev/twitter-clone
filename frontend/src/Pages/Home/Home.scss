@@ -1,0 +1,123 @@
+@import "/src/scss/variables";
+
+.home {
+  display: flex;
+}
+.left {
+  flex-basis: 22%;
+  height: 100vh;
+  padding: 25px;
+  padding-top: 4px;
+  padding-right: 7px;
+  border-right: 1px solid $hoverGray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  ul {
+    font-size: 1.3rem;
+
+    li {
+      &:first-child {
+        a {
+          display: inline-block;
+          padding: 10px 12px 6px 12px;
+          border-radius: 30px;
+          svg {
+            width: 32px;
+            height: 32px;
+            fill: $mainBlue;
+          }
+          &:hover {
+            background-color: #87d8f33a;
+          }
+        }
+      }
+
+      margin-bottom: 5px;
+      a {
+        div {
+          padding: 10px 14px;
+          border-radius: 30px;
+        }
+        &:hover {
+          div {
+            background-color: $hoverGray;
+          }
+        }
+        display: flex;
+        align-items: center;
+        span {
+          margin: 0 10px 0 20px;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    border-radius: 60px;
+    cursor: pointer;
+    &:hover {
+      background-color: $hoverGray;
+    }
+  }
+  &__name {
+    margin-left: -28px;
+    font-size: 1.1em;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    .userName {
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+    .userId {
+      color: #526371;
+    }
+  }
+}
+.main {
+  flex-basis: 47%;
+  display: block;
+  border-right: 1px solid $hoverGray;
+
+  &__header {
+    padding: 20px;
+    border-bottom: 1px solid $hoverGray;
+  }
+}
+.right {
+  flex-basis: 31%;
+}
+
+.navTweetBtn {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.moreIcon {
+  transform: scale(0.4);
+}
+
+.tweetForm {
+  padding: 15px;
+  display: flex;
+  border-bottom: 1px solid $hoverGray;
+  &__left {
+    padding-right: 12px;
+  }
+  &__right {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

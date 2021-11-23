@@ -1,3 +1,4 @@
+@import "/src/scss/variables";
 .textInput {
   &__input {
     height: 3rem;
@@ -11,7 +12,7 @@
 
     background-color: inherit;
     &:focus {
-      border: 2px solid #1c9bef;
+      border: 2px solid $mainBlue;
     }
   }
   &__label {
@@ -32,5 +33,5 @@
   left: 11px;
 }
 .textInput__input:focus ~ .textInput__label {
-  color: #1c9bef;
+  color: $mainBlue;
 }
